@@ -1,0 +1,21 @@
+{
+  "name": "PgWpTemplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w --source-map true --output-style compressed src/sass/style.scss www/style.css",
+    "webpack": "webpack --watch --optimize-minimize",
+    "phonegap": "phonegap serve --port 3000",
+    "start": "npm run sass & npm run webpack & npm run phonegap"
+  },
+  "author": "kataoka@sandalot.com",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.5.2",
+    "webpack": "^2.4.1"
+  }
+}
